@@ -84,11 +84,6 @@ In-class coding examples organized by date:
 
 ---
 
-## Lecture Slides
-
-The `lecture/` directory contains course lecture PDFs.
-
----
 
 ## Topics Covered
 
