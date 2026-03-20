@@ -47,15 +47,13 @@ let map func objects =
     match objects with
     | []->map_list
     | head::tail -> mapping tail ((func head)::(map_list)) in mapping objects []
- 
+
 let map func objects = 
   let rec mapping objects on_result = 
     match objects with
     | [] -> on_result []
     | head::tail -> mapping tail (fun map_tail -> on_result(func head::map_tail))
   in mapping objects 
-
-
 
 let update_env_cps key f env k = 
   let rec updating env k =
